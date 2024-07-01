@@ -9,7 +9,7 @@ export default function LeftSide({ className }: { className: string }) {
     <div className={"relative "+ className}>
       <header>
         <h1 className="mb-2 text-5xl font-bold tracking-tight text-slate-200">
-          <Link href="/">Tony Chau</Link>
+          <Link href="/">this is branch</Link>
         </h1>
         <h2 className="mb-2 text-xl text-slate-200">Software Engineer</h2>
         <ResumeButton ></ResumeButton>
