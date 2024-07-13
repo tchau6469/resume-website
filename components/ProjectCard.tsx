@@ -23,19 +23,19 @@ export default function ProjectCard({
     <Link href="https://youtube.com" target="_blank">
       <div
         className={
-          "-mx-6 mt-4 flex flex-col rounded-md px-6 py-4 transition-all ease-in sm:flex-row" +
+          "-mx-6 mt-4 flex flex-col sm:flex-row  rounded-md px-6 py-4 transition-all ease-in" +
           ` ${hovered ? "bg-slate-200 bg-opacity-5" : "bg-transparent"}` +
           ` ${!hovered && anyHovered ? "opacity-50" : "opacity-100"}`
         }
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        <div id="years" className="w-full sm:w-[22%] sm:pr-3 sm:pt-1">
-          <Image src="/svgs/github-svg.svg" alt="project image" width={100} height={100} />
+        <div id="years" className="hidden sm:flex w-full sm:w-[25%] h-20 ">
+          <Image src="/pics/pillpopperpic.png" alt="project image" width={150} height={100} />
 
         </div>
 
-        <div className="w-full sm:w-[78%] sm:pl-3">
+        <div className="w-full sm:w-[75%] pl-3">
           <h3
             id="projName"
             className={
@@ -58,6 +58,11 @@ export default function ProjectCard({
           </ul>
         </div>
       </div>
+
+      <div id="years" className="flex sm:hidden w-[35%] h-28 border-2 border-teal-300">
+          <Image src="/pics/pillpopperpic.png" alt="project image" width={200} height={100} />
+
+        </div>
     </Link>
   );
 }

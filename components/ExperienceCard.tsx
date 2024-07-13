@@ -33,7 +33,7 @@ export default function ExperienceCard({
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        <div id="years" className="w-full sm:w-[22%] sm:pr-3 sm:pt-1">
+        <div id="years" className="w-full sm:w-[22%] sm:pr-3 sm:pt-1 ">
           <p className="text-xxs font-bold uppercase tracking-wide text-slate-500">
             {`${dateStart} — ${dateEnd}`}
           </p>
