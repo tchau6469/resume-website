@@ -5,6 +5,7 @@ import Image from "next/image";
 export default function ProjectCard({
   name,
   codeLanguages,
+  imageURL,
   children,
   hovered,
   anyHovered,
@@ -13,6 +14,7 @@ export default function ProjectCard({
 }: {
   name: string;
   codeLanguages: string[];
+  imageURL: string;
   children: React.ReactNode;
   hovered: boolean;
   anyHovered: boolean;
@@ -30,8 +32,8 @@ export default function ProjectCard({
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        <div id="years" className="hidden sm:flex w-full sm:w-[25%] h-20 ">
-          <Image src="/pics/pillpopperpic.png" alt="project image" width={150} height={100} />
+        <div className="hidden sm:flex w-full sm:w-[25%] h-20 ">
+          <Image src={imageURL} alt="project image" width={150} height={100} />
 
         </div>
 

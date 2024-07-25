@@ -22,6 +22,7 @@ export default function CardContainer() {
           key={child.id}
           name={child.name}
           codeLanguages={child.codeLanguages}
+          imageURL={child.imageURL}
           hovered={index === hoveredIndex}
           anyHovered={hoveredIndex !== null}
           handleMouseEnter={() => handleMouseEnter(index)}

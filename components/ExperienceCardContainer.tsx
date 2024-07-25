@@ -1,6 +1,6 @@
 "use client";
 
-import { projects as projectsData } from "@/assets/projects";
+import { experiences as experiencesData } from "@/assets/experiences";
 import { useState } from "react";
 import ExperienceCard from "./ExperienceCard";
 
@@ -17,7 +17,7 @@ export default function ExperienceCardContainer() {
 
   return (
     <div>
-      {projectsData.map((child, index) => (
+      {experiencesData.map((child, index) => (
         <ExperienceCard
           key={child.id}
           dateStart={child.dateStart}

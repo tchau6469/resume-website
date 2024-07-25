@@ -25,12 +25,12 @@ export default function RightSide({ className }: { className: string }) {
         </p>
       </section>
 
-      <section id="experience" className="mb-24 scroll-mt-24">
+      <section id="experience" className="mb-24 scroll-mt-[5rem]">
       <h2 className="mb-4 uppercase font-bold tracking-wide text-slate-200 text-sm lg:hidden">experience</h2>
         <ExperienceCardContainer></ExperienceCardContainer>
       </section>
 
-      <section id="projects" className="mb-24 scroll-mt-24">
+      <section id="projects" className="mb-24 scroll-mt-[5rem]">
       <h2 className="mb-4 uppercase font-bold tracking-wide text-slate-200 text-sm lg:hidden">projects</h2>
         <ProjectCardContainer></ProjectCardContainer>
       </section>
