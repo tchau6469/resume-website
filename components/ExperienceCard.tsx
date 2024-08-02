@@ -5,6 +5,7 @@ export default function ExperienceCard({
   dateStart,
   dateEnd,
   name,
+  URL,
   codeLanguages,
   children,
   hovered,
@@ -15,6 +16,7 @@ export default function ExperienceCard({
   dateStart: string;
   dateEnd: string;
   name: string;
+  URL: string;
   codeLanguages: string[];
   children: React.ReactNode;
   hovered: boolean;
@@ -23,7 +25,7 @@ export default function ExperienceCard({
   handleMouseLeave: () => void;
 }) {
   return (
-    <Link href="https://youtube.com" target="_blank">
+    <Link href={URL} target="_blank">
       <div
         className={
           "-mx-6 mt-4 flex flex-col rounded-md px-6 py-4 transition-all ease-in sm:flex-row" +
@@ -33,13 +35,13 @@ export default function ExperienceCard({
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        <div id="years" className="w-full sm:w-[22%] sm:pr-3 sm:pt-1 ">
+        <div id="years" className="w-full sm:w-[25%] sm:pr-3 sm:pt-1 ">
           <p className="text-xxs font-bold uppercase tracking-wide text-slate-500">
             {`${dateStart} — ${dateEnd}`}
           </p>
         </div>
 
-        <div className="w-full sm:w-[78%] sm:pl-3">
+        <div className="w-full sm:w-[75%] sm:pl-3">
           <h3
             id="projName"
             className={

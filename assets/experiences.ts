@@ -2,6 +2,7 @@ interface Experience {
   id: number;
   dateStart: string;
   dateEnd: string;
+  URL: string;
   name: string;
   codeLanguages: string[];
   description: string;
@@ -10,47 +11,12 @@ interface Experience {
 export const experiences: Experience[] = [
   {
     id: 1,
-    dateStart: "Jun 021",
-    dateEnd: "Jun 2022",
-    name: "Project Alpha",
-    codeLanguages: ["JavaScript", "TypeScript", "React"],
+    dateStart: "July 2021",
+    dateEnd: "July 2022",
+    URL: "https://www.linkedin.com/company/tata-consultancy-services/",
+    name: "Software Engineer • TCS",
+    codeLanguages: ["JavaScript", "TypeScript", "HTML", "CSS"],
     description:
-      "A web application for managing tasks and projects with real-time collaboration features.",
-  },
-  {
-    id: 2,
-    dateStart: "Jul 2021",
-    dateEnd: "Dec 2021",
-    name: "Project Beta",
-    codeLanguages: ["Python", "Django", "PostgreSQL"],
-    description:
-      "An e-commerce platform with a custom recommendation engine and secure payment processing.",
-  },
-  {
-    id: 3,
-    dateStart: "Jan 2022",
-    dateEnd: "Mar 2022",
-    name: "Project Gamma",
-    codeLanguages: ["Java", "Spring Boot", "MySQL"],
-    description:
-      "A backend service for a social media application with RESTful API endpoints and user authentication.",
-  },
-  {
-    id: 4,
-    dateStart: "Apr 2022",
-    dateEnd: "Aug 2022",
-    name: "Project Delta",
-    codeLanguages: ["C#", "ASP.NET Core", "Microsoft SQL Server"],
-    description:
-      "An internal tool for automating business processes and generating detailed reports.",
-  },
-  {
-    id: 5,
-    dateStart: "Sept 2022",
-    dateEnd: "Dec 2022",
-    name: "Project Epsilon",
-    codeLanguages: ["Go", "GraphQL", "MongoDB"],
-    description:
-      "A high-performance microservices architecture for a financial technology application. A high-performance microservices architecture for a financial technology application. A high-performance microservices architecture for a financial technology application.A high-performance microservices architecture for a financial technology application.A high-performance microservices architecture for a financial technology application.A high-performance microservices architecture for a financial technology application.A high-performance microservices architecture for a financial technology application.A high-performance microservices architecture for a financial technology application.A high-performance microservices architecture for a financial technology application.",
+      "Worked on the migration of Google's codebase from JavaScript to TypeScript in order to enhance type safety and reduce runtime errors as a contractor at Tata Consultancy Services. Collaborated with cross-functional teams, including developers and product managers, to refactor and optimize existing code, enhancing application performance and maintainability.",
   },
 ];

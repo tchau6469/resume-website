@@ -1,5 +1,6 @@
 import ProjectCardContainer from "./ProjectCardContainer";
 import ExperienceCardContainer from "./ExperienceCardContainer";
+import Footer from "./Footer";
 
 export default function RightSide({ className }: { className: string }) {
   return (
@@ -34,6 +35,7 @@ export default function RightSide({ className }: { className: string }) {
       <h2 className="mb-4 uppercase font-bold tracking-wide text-slate-200 text-sm lg:hidden">projects</h2>
         <ProjectCardContainer></ProjectCardContainer>
       </section>
+      <Footer></Footer>
     </div>
   );
 }

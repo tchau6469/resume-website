@@ -23,6 +23,7 @@ export default function ExperienceCardContainer() {
           dateStart={child.dateStart}
           dateEnd={child.dateEnd}
           name={child.name}
+          URL={child.URL}
           codeLanguages={child.codeLanguages}
           hovered={index === hoveredIndex}
           anyHovered={hoveredIndex !== null}
